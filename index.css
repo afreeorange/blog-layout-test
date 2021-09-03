@@ -1,0 +1,54 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 12px;
+}
+
+header,
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+article {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 0 1em;
+}
+article:not(:first-child),
+article:not(:last-child) {
+  margin: 1em 0;
+}
+
+article[data-type="link"] {
+  border-color: green;
+  color: green;
+}
+article[data-type="media"] {
+  border-color: blue;
+  color: blue;
+}
+
+aside {
+  padding-left: 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.container {
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-column-gap: 0.5em;
+  }
+
+  main article[data-type="media"],
+  main article[data-type="link"] {
+    display: none;
+  }
+}

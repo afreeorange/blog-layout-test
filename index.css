@@ -15,6 +15,7 @@ article {
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 0 1em;
+  position: relative;
 }
 article:not(:first-child),
 article:not(:last-child) {
@@ -28,6 +29,23 @@ article[data-type="link"] {
 article[data-type="media"] {
   border-color: blue;
   color: blue;
+}
+
+article::after {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: x-small;
+  opacity: 0.35;
+}
+article[data-type="post"]::after {
+  content: "Article";
+}
+article[data-type="link"]::after {
+  content: "Link";
+}
+article[data-type="media"]::after {
+  content: "Media";
 }
 
 aside {

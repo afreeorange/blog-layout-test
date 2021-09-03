@@ -12,4 +12,6 @@ Assume there are three types of articles: `post`, `link`, and `media`. The blog 
     + and sorted by date/order
 * OK if it's one-column when JS is disabled
 
-We tried to do this only with CSS but that proved impossible. Rob's solution was more elegant and involved a minimum of JS but it did split the content into `main` and `aside`. I just cloned things 🤣 🐑
+**Solution**
+
+We tried to do this only with CSS but that proved impossible. [Rob's solution was more elegant](https://codepen.io/rglazebrook/pen/9aaeec83036cd27a50711f98f5ae9ac1) and involved a minimum of JS but it did split the content into `main` and `aside`. [I just cloned things](https://codepen.io/afreeorange/pen/bGRePdw) 🤣 🐑 
